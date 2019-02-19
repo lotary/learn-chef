@@ -1,3 +1,12 @@
+# Overview
+1. The latest version is using docker-compose for the exercise. You will need to sign up for a free Chef-Server on chef .com and update Knife as per the steps below. The docker-compose will spin up 2 containers, chef-workstation to develope cookbook and have knife to manage the chef-node. 2nd container is chef-node.
+
+2. Checkout the code to a folder and make sure docker is running.
+
+3. Following the steps below to bootstrap the chef-node from chef-workstation
+
+
+
 # this folder is mounted to the container 59ebee29a4eb (learn-chef : /root/chef-repo)
 # https://learn.chef.io/modules/manage-a-node-chef-server/rhel/hosted/get-a-node-to-bootstrap#/infrastructure-automation
 ## Setup  workstation 
