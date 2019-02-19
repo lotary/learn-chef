@@ -1,0 +1,18 @@
+version: '3'
+services:
+  chef-workstation:
+    build: . 
+    ports: 
+      - "8100:80"
+    volumes:
+      - ".:/root/chef-repo"
+    container_name: "chef-workstation-container"
+    tty: true
+  chef-node:
+    image: 'jdeathe/centos-ssh'
+    ports:
+      - "8122:22"
+      - "8180:80" 
+      - "8433:433"
+    container_name: "chef-node-container"
+  
